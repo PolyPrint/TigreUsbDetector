@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Management;
 using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace TigreUsbDetector
@@ -24,7 +25,8 @@ namespace TigreUsbDetector
 
             using (var control = new UsbControl())
             {
-                Console.ReadLine(); //block - depends on usage in a Windows (NT) Service, WinForms/Console/Xaml-App, library
+                Thread.Sleep(Timeout.Infinite);
+                //Console.ReadLine(); //block - depends on usage in a Windows (NT) Service, WinForms/Console/Xaml-App, library
             }
         }
 
@@ -65,25 +67,33 @@ namespace TigreUsbDetector
                 if (sender != _watcherAttach)
                     return;
                 Console.WriteLine("====DETECTED USB====");
-                Console.WriteLine($"{Directory.GetFiles(_driveName).Count()} FILES");
-                foreach (var file in Directory.GetFiles(_driveName))
+                Console.WriteLine($"{Directory.GetFiles(_driveName).Length} FILES");
+                using (var connection =
+                    new NetworkConnection(@"\\pp-tuc-corvette", new NetworkCredential("tgabb", "tg2696")))
                 {
-                    try
+                    foreach (var file in Directory.GetFiles(_driveName))
                     {
-                        var fname = Path.GetFileName(file);
-                        var path = Path.Combine(_dataDir, fname);
-                        Console.WriteLine($@"Processing file {fname}");
-                        Console.WriteLine("\tCopying...");
-                        File.Copy(file, path);
-                        Console.WriteLine("\tDeleting...");
-                        File.Delete(file);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex);
+                        try
+                        {
+                            var fname = Path.GetFileName(file);
+                            var path = Path.Combine(_dataDir, fname);
+                            Console.WriteLine($@"Processing file {fname}");
+                            Console.WriteLine("\tCopying...");
+                            File.Copy(file, path);
+                            Console.WriteLine("\tDeleting...");
+                            File.Delete(file);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex);
+                            MessageBox.Show("Encountered error with Tigre USB Files", "Try Again", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                        }
                     }
                 }
-            Console.WriteLine("====PROCESSING FINISHED====");
+                Console.WriteLine("====PROCESSING FINISHED====");
+                MessageBox.Show("Tigre Files Uploaded Sucesfully", "Remove USB", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
             }
 
             //void Detaching(object sender, EventArrivedEventArgs e)
@@ -92,7 +102,7 @@ namespace TigreUsbDetector
             //        return;
 
             //}
-
+            
             ~UsbControl()
             {
                 Dispose(); // for ease of readability I left out the complete Dispose pattern
