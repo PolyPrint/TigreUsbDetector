@@ -1,0 +1,7 @@
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\bin\Debug\TigreUsbDetector.exe.config
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\bin\Debug\TigreUsbDetector.exe
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\bin\Debug\TigreUsbDetector.pdb
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\obj\Debug\TigreUsbDetector.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\obj\Debug\TigreUsbDetector.exe
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\obj\Debug\TigreUsbDetector.pdb
+C:\Users\Tyler\Documents\Clones\TigreUsbDetector\TigreUsbDetector\obj\Debug\TigreUsbDetector.csprojResolveAssemblyReference.cache
