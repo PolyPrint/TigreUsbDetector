@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Management;
 using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace TigreUsbDetector
 {
-    //D:\SAMP02
     class Program
     {
         private static string _dataDir;
@@ -24,7 +24,8 @@ namespace TigreUsbDetector
 
             using (var control = new UsbControl())
             {
-                Console.ReadLine(); //block - depends on usage in a Windows (NT) Service, WinForms/Console/Xaml-App, library
+                Console.ReadLine();
+                //Thread.Sleep(Timeout.Infinite);
             }
         }
 
@@ -64,26 +65,56 @@ namespace TigreUsbDetector
             {
                 if (sender != _watcherAttach)
                     return;
-                Console.WriteLine("====DETECTED USB====");
-                Console.WriteLine($"{Directory.GetFiles(_driveName).Count()} FILES");
-                foreach (var file in Directory.GetFiles(_driveName))
+                try
                 {
-                    try
-                    {
-                        var fname = Path.GetFileName(file);
-                        var path = Path.Combine(_dataDir, fname);
-                        Console.WriteLine($@"Processing file {fname}");
-                        Console.WriteLine("\tCopying...");
-                        File.Copy(file, path);
-                        Console.WriteLine("\tDeleting...");
-                        File.Delete(file);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex);
-                    }
+                    Console.WriteLine("====DETECTED USB====");
+                    Console.WriteLine($"{Directory.GetFiles(_driveName).Length} FILES");
+                    //using (var connection =
+                    //    new NetworkConnection(@"\\pp-tuc-corvette", new NetworkCredential("tgabb", "tg2696")))
+                    //{
+                        foreach (var file in Directory.GetFiles(_driveName))
+                        {
+                            try
+                            {
+                                var fname = Path.GetFileName(file);
+                                var path = Path.Combine(_dataDir, fname);
+                                Console.WriteLine($@"Processing file {fname}");
+                                Console.WriteLine("\tCopying...");
+                                File.Copy(file, path);
+                                Console.WriteLine("\tDeleting...");
+                                File.Delete(file);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex);
+                                var msg =
+                                    @"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
+Se ha producido un error Tenga en cuenta la hora y el departamento de TI de contacto";
+                                MessageBox.Show(msg, "Problem with Tigre USB", MessageBoxButtons.OK, MessageBoxIcon.Error, 
+                                    MessageBoxDefaultButton.Button1, (MessageBoxOptions)0x40000); 
+                                return;
+                            }
+                        }
+                    //}
+                    Console.WriteLine("====PROCESSING FINISHED====");
+                    MessageBox.Show("Tigre USB Processed. " +
+                                    "Please remove and place back into Tigre usb slot",
+                        "Remove USB", MessageBoxButtons.OK, MessageBoxIcon.Information, 
+                        MessageBoxDefaultButton.Button1, (MessageBoxOptions)0x40000); 
                 }
-            Console.WriteLine("====PROCESSING FINISHED====");
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    var msg =
+                        @"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
+Se ha producido un error Tenga en cuenta la hora y el departamento de TI de contacto";
+                    MessageBox.Show(msg, "Problem with Tigre USB", MessageBoxButtons.OK, MessageBoxIcon.Error, 
+                        MessageBoxDefaultButton.Button1, (MessageBoxOptions)0x40000); 
+                }
+
+
+
+
             }
 
             //void Detaching(object sender, EventArrivedEventArgs e)
@@ -92,7 +123,7 @@ namespace TigreUsbDetector
             //        return;
 
             //}
-
+            
             ~UsbControl()
             {
                 Dispose(); // for ease of readability I left out the complete Dispose pattern
