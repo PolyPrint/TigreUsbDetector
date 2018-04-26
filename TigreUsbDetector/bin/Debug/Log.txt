@@ -1,0 +1,48 @@
+====DETECTED USB====
+2 FILES
+Processing file foo.bar
+	Copying...
+The user name or password is incorrect.
+
+====DETECTED USB====Thursday, April 26, 2018 12:22:22 PM
+2 FILES
+Processing file foo.bar
+	Copying...
+The user name or password is incorrect.
+
+====DETECTED USB====Thursday, April 26, 2018 12:30:37 PM
+2 FILES
+Processing file foo.bar
+	Copying...
+	Deleting...
+Processing file zip.zap
+	Copying...
+	Deleting...
+====PROCESSING FINISHED====
+====DETECTED USB====Thursday, April 26, 2018 12:33:12 PM
+0 FILES
+====PROCESSING FINISHED====
+====DETECTED USB====Thursday, April 26, 2018 12:44:43 PM
+0 FILES
+====PROCESSING FINISHED====
+====DETECTED USB====Thursday, April 26, 2018 12:45:42 PM
+1 FILES
+Processing file 123.txt
+	Copying...
+The target file "./Saved" is a directory, not a file.
+====DETECTED USB====Thursday, April 26, 2018 12:47:27 PM
+1 FILES
+Processing file 123.txt
+	Copying...
+The file 'D:\SAMP02\123.txt' already exists.
+====DETECTED USB====Thursday, April 26, 2018 12:48:03 PM
+1 FILES
+Processing file 123.txt
+	Copying...
+The file 'D:\SAMP02\123.txt' already exists.
+====DETECTED USB====Thursday, April 26, 2018 12:52:29 PM
+1 FILES
+Processing file 123.txt
+	Copying...
+	Deleting...
+====PROCESSING FINISHED====
