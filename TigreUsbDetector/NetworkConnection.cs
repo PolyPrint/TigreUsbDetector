@@ -28,7 +28,7 @@ public class NetworkConnection : IDisposable
 
         var userName = string.IsNullOrEmpty(credentials.Domain)
             ? credentials.UserName
-            : string.Format(@"{0}\{1}", credentials.Domain, credentials.UserName);
+            : $@"{credentials.Domain}\{credentials.UserName}";
 
         var result = WNetAddConnection2(
             netResource, 

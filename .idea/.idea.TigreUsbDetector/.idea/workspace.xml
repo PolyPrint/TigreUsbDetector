@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd53e7d5-2c22-4926-9d23-47efab339cb9" name="Default" comment="" />
+    <list default="true" id="fd53e7d5-2c22-4926-9d23-47efab339cb9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TigreUsbDetector/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TigreUsbDetector/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/Log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/TigreUsbDetector.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/TigreUsbDetector.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/TigreUsbDetector.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/TigreUsbDetector.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/obj/Debug/TigreUsbDetector.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/obj/Debug/TigreUsbDetector.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TigreUsbDetector/obj/Debug/TigreUsbDetector.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TigreUsbDetector/obj/Debug/TigreUsbDetector.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,40 +33,63 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TigreUsbDetector/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
+            <state relative-caret-position="923">
+              <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
               <folding>
-                <marker date="1524609694070" expanded="false" signature="6:255" ph="..." />
-                <marker date="1524609694070" expanded="true" signature="283:5424" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="303:5422" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="419:756" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="632:746" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="805:5416" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="1051:1746" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="1413:1732" ph="/* Add USB unplugged event watching ... */" />
-                <marker date="1524609694070" expanded="true" signature="1781:2085" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="1851:1930" ph="/* watcherDetach.Stop(); ... */" />
-                <marker date="1524609694070" expanded="true" signature="1989:2071" ph="/* watcherDetach.Dispose(); ... */" />
-                <marker date="1524609694070" expanded="true" signature="2153:5068" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="2261:4461" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="2452:2614" ph="/* using (var connection = ... */" />
-                <marker date="1524609694070" expanded="true" signature="2691:4023" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="2749:3272" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="3321:3997" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="4498:5050" ph="{...}" />
-                <marker date="1524609694070" expanded="true" signature="5082:5245" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
-                <marker date="1524609694070" expanded="true" signature="5284:5406" ph="{...}" />
+                <marker date="1525705142867" expanded="false" signature="6:318" ph="..." />
+                <marker date="1525705142867" expanded="true" signature="346:7154" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="366:7152" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="482:918" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="794:908" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="967:7146" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="1213:1908" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="1575:1894" ph="/* Add USB unplugged event watching ... */" />
+                <marker date="1525705142867" expanded="true" signature="1943:2247" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="2013:2092" ph="/* watcherDetach.Stop(); ... */" />
+                <marker date="1525705142867" expanded="true" signature="2151:2233" ph="/* watcherDetach.Dispose(); ... */" />
+                <marker date="1525705142867" expanded="true" signature="2261:2532" ph="/// Fires when Win32_Volume changes volume, like the insertion of a USB drive or attachment of ... " />
+                <marker date="1525705142867" expanded="true" signature="2599:6798" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="2986:3142" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="3181:3467" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="3487:6038" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="4000:5554" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="4050:4809" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="4854:5532" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="6075:6610" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="6634:6784" ph="{...}" />
+                <marker date="1525705142867" expanded="true" signature="6812:6975" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
+                <marker date="1525705142867" expanded="true" signature="7014:7136" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.config" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TigreUsbDetector/App.config">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="NetworkConnection.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <marker date="1525705153924" expanded="false" signature="6:200" ph="..." />
+                <marker date="1525705153924" expanded="true" signature="228:2494" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="275:1686" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="392:1125" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="488:684" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="1014:1116" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="1151:1187" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="1214:1284" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="1336:1402" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="1750:2004" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="2037:2119" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="2152:2216" ph="{...}" />
+                <marker date="1525705153924" expanded="true" signature="2255:2492" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -66,8 +98,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6E70350-B81B-4B67-A86E-BBC5866A81CE/f1/f54bb8cb/Delegate.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TigreUsbDetector/App.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TigreUsbDetector/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs" />
+        <option value="$PROJECT_DIR$/TigreUsbDetector/Program.cs" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -76,16 +118,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-10" />
     <option name="width" value="975" />
-    <option name="height" value="1048" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -104,6 +145,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -124,18 +166,18 @@
   </component>
   <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/TigreUsbDetector/bin/Debug/TigreUsbDetector.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TigreUsbDetector/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TigreUsbDetector/TigreUsbDetector.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -149,11 +191,13 @@
       <option name="presentableId" value="Default" />
       <updated>1524613266219</updated>
       <workItem from="1524613272402" duration="188000" />
+      <workItem from="1525473957560" duration="998000" />
+      <workItem from="1525704964698" duration="328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188000" />
+    <option name="totallyTimeSpent" value="1514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -166,29 +210,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="0" weight="0.3295302" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="8" />
       <window_info anchor="right" id="Database" order="1" weight="0.3295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,34 +244,146 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TigreUsbDetector/Program.cs</url>
+          <line>74</line>
+          <properties documentPath="$PROJECT_DIR$/TigreUsbDetector/Program.cs" initialLine="68">
+            <startOffsets>
+              <startOffset value="2612" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2613" />
+            </endOffsets>
+          </properties>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TigreUsbDetector/App.config">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/TigreUsbDetector/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="88" column="71" lean-forward="true" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
+          <folding>
+            <marker date="1525705142867" expanded="false" signature="6:318" ph="..." />
+            <marker date="1525705142867" expanded="true" signature="346:7154" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="366:7152" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="482:918" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="794:908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="967:7146" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1213:1908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1575:1894" ph="/* Add USB unplugged event watching ... */" />
+            <marker date="1525705142867" expanded="true" signature="1943:2247" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2013:2092" ph="/* watcherDetach.Stop(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2151:2233" ph="/* watcherDetach.Dispose(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2261:2532" ph="/// Fires when Win32_Volume changes volume, like the insertion of a USB drive or attachment of ... " />
+            <marker date="1525705142867" expanded="true" signature="2599:6798" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2986:3142" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3181:3467" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3487:6038" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4000:5554" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4050:4809" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4854:5532" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6075:6610" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6634:6784" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6812:6975" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
+            <marker date="1525705142867" expanded="true" signature="7014:7136" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TigreUsbDetector/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
+        <state>
           <folding>
-            <marker date="1524609694070" expanded="false" signature="6:255" ph="..." />
-            <marker date="1524609694070" expanded="true" signature="283:5424" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="303:5422" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="419:756" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="632:746" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="805:5416" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="1051:1746" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="1413:1732" ph="/* Add USB unplugged event watching ... */" />
-            <marker date="1524609694070" expanded="true" signature="1781:2085" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="1851:1930" ph="/* watcherDetach.Stop(); ... */" />
-            <marker date="1524609694070" expanded="true" signature="1989:2071" ph="/* watcherDetach.Dispose(); ... */" />
-            <marker date="1524609694070" expanded="true" signature="2153:5068" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="2261:4461" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="2452:2614" ph="/* using (var connection = ... */" />
-            <marker date="1524609694070" expanded="true" signature="2691:4023" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="2749:3272" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="3321:3997" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="4498:5050" ph="{...}" />
-            <marker date="1524609694070" expanded="true" signature="5082:5245" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
-            <marker date="1524609694070" expanded="true" signature="5284:5406" ph="{...}" />
+            <marker date="1525705142867" expanded="false" signature="6:318" ph="..." />
+            <marker date="1525705142867" expanded="true" signature="346:7154" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="366:7152" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="482:918" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="794:908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="967:7146" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1213:1908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1575:1894" ph="/* Add USB unplugged event watching ... */" />
+            <marker date="1525705142867" expanded="true" signature="1943:2247" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2013:2092" ph="/* watcherDetach.Stop(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2151:2233" ph="/* watcherDetach.Dispose(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2261:2532" ph="/// Fires when Win32_Volume changes volume, like the insertion of a USB drive or attachment of ... " />
+            <marker date="1525705142867" expanded="true" signature="2599:6798" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2986:3142" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3181:3467" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3487:6038" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4000:5554" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4050:4809" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4854:5532" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6075:6610" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6634:6784" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6812:6975" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
+            <marker date="1525705142867" expanded="true" signature="7014:7136" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6E70350-B81B-4B67-A86E-BBC5866A81CE/f1/f54bb8cb/Delegate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TigreUsbDetector/NetworkConnection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1525705153924" expanded="false" signature="6:200" ph="..." />
+            <marker date="1525705153924" expanded="true" signature="228:2494" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="275:1686" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="392:1125" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="488:684" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="1014:1116" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="1151:1187" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="1214:1284" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="1336:1402" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="1750:2004" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="2037:2119" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="2152:2216" ph="{...}" />
+            <marker date="1525705153924" expanded="true" signature="2255:2492" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TigreUsbDetector/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
+          <folding>
+            <marker date="1525705142867" expanded="false" signature="6:318" ph="..." />
+            <marker date="1525705142867" expanded="true" signature="346:7154" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="366:7152" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="482:918" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="794:908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="967:7146" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1213:1908" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="1575:1894" ph="/* Add USB unplugged event watching ... */" />
+            <marker date="1525705142867" expanded="true" signature="1943:2247" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2013:2092" ph="/* watcherDetach.Stop(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2151:2233" ph="/* watcherDetach.Dispose(); ... */" />
+            <marker date="1525705142867" expanded="true" signature="2261:2532" ph="/// Fires when Win32_Volume changes volume, like the insertion of a USB drive or attachment of ... " />
+            <marker date="1525705142867" expanded="true" signature="2599:6798" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="2986:3142" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3181:3467" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="3487:6038" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4000:5554" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4050:4809" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="4854:5532" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6075:6610" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6634:6784" ph="{...}" />
+            <marker date="1525705142867" expanded="true" signature="6812:6975" ph="/* void Detaching(object sender, EventArrivedEventArgs e) ... */" />
+            <marker date="1525705142867" expanded="true" signature="7014:7136" ph="{...}" />
           </folding>
         </state>
       </provider>

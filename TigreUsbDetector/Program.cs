@@ -65,6 +65,12 @@ namespace TigreUsbDetector
                 //you may want to yield or Thread.Sleep
             }
 
+            /// <summary>
+            /// Fires when Win32_Volume changes volume, like the insertion of a USB drive or attachment of
+            /// any storage volume. 
+            /// </summary>
+            /// <param name="sender"></param>
+            /// <param name="e"></param>
             void Attaching(object sender, EventArrivedEventArgs e)
             {
                 if (sender != _watcherAttach)
@@ -86,8 +92,12 @@ namespace TigreUsbDetector
                 }
                 try
                 {
-                    strbld.AppendLine($"{Directory.GetFiles(_driveName).Length} FILES");
-                    Console.WriteLine($"{Directory.GetFiles(_driveName).Length} FILES");
+                    var fcount = Directory.GetFiles(_driveName).Length;
+                    strbld.AppendLine($"{fcount}Directory.GetFiles(_driveName).Length}} FILES");
+                    Console.WriteLine($"{fcount} FILES");
+                    string dir = null;
+                    if(fcount > 0)
+                    dir = Directory.CreateDirectory($"./Saved/{DateTime.Now.ToString("F").Replace(":", ".")}").FullName;
                     foreach (var file in Directory.GetFiles(_driveName))
                     {
                         try
@@ -98,8 +108,6 @@ namespace TigreUsbDetector
                             Console.WriteLine($@"Processing file {fname}");
                             strbld.AppendLine("\tCopying...");
                             Console.WriteLine("\tCopying...");
-                            var dir = Directory
-                                .CreateDirectory($"./Saved/{DateTime.Now.ToString("F").Replace(":", ".")}").FullName;
                             File.Copy(file,Path.Combine(dir,fname));
                             File.Copy(file, path);
                             strbld.AppendLine("\tDeleting...");
@@ -111,7 +119,7 @@ namespace TigreUsbDetector
                             strbld.AppendLine(ex.Message);
                             Console.WriteLine(ex.Message);
                             var msg =
-                                @"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
+@"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
 Se ha producido un error Tenga en cuenta la hora y el departamento de TI de contacto";
                             MessageBox.Show(msg, "Problem with Tigre USB", MessageBoxButtons.OK, MessageBoxIcon.Error,
                                 MessageBoxDefaultButton.Button1, (MessageBoxOptions) 0x40000);
@@ -130,7 +138,7 @@ Se ha producido un error Tenga en cuenta la hora y el departamento de TI de cont
                 {
                     strbld.AppendLine(ex.Message);
                     var msg =
-                        @"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
+@"An error has occurred whike trying to process the USB drive from Tigre Slitter. Please note the time and contact the IT Department
 Se ha producido un error Tenga en cuenta la hora y el departamento de TI de contacto";
                     MessageBox.Show(msg, "Problem with Tigre USB", MessageBoxButtons.OK, MessageBoxIcon.Error,
                         MessageBoxDefaultButton.Button1, (MessageBoxOptions) 0x40000);
